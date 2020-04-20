@@ -5,14 +5,14 @@ include 'conexion.php';
     $pass2=$_POST['confirmar_contrasena'];
 
    if (strcmp($pass, $pass2) !== 0) {
-    echo 'Las contrasenias no considen wei';
+    echo 'Las contraseñas no coinciden';
 
    }else{
         $sql ="INSERT INTO usuarios (login, password)
        VALUES ('$usuario','$pass') ";
 
        if($mysqli->query($sql) === TRUE){
-		    echo "Tonto, pa que te registras<br>";}   
+		    echo "Te has registrado correctamente<br>";}   
        else {
 		    echo "Error: " . $sql . "<br>" . $mysqli->error;}
 
