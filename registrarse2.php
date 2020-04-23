@@ -1,24 +1,27 @@
 <?php
 include 'conexion.php';
-    $usuario=$_POST['usuario'];
-    $pass=$_POST['contrasena'];
-    $pass2=$_POST['confirmar_contrasena'];
+    $user_input=$_POST['username'];
+    $pass_input=password_hash($_POST['password'], PASSWORD_BCRYPT);
+    $pass_confirm=password_hash($_POST['confirm_password'], PASSWORD_BCRYPT);
 
-   if (strcmp($pass, $pass2) !== 0) {
-    echo 'Las contraseñas no coinciden';
+if (!password_verify($_POST['password'], $pass_confirm)) {
+ echo 'The password are incorrect';
 
-   }else{
+}else{
+       
+       
+
+
+        
         $sql ="INSERT INTO usuarios (login, password)
-       VALUES ('$usuario','$pass') ";
+       VALUES ('$user_input','$pass_input') ";
 
        if($mysqli->query($sql) === TRUE){
-		    echo "Te has registrado correctamente<br>";}   
+		    echo "Your registration is successfully<br>";}   
        else {
 		    echo "Error: " . $sql . "<br>" . $mysqli->error;}
 
         $mysqli -> commit();
 	$mysqli -> close();
     }
-
-
     ?>

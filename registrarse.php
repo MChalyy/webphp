@@ -1,16 +1,16 @@
 <html>
 	<head>
-		<title>Ejercicio 80 - Update</title>
+		<title>Sing Up</title>
 		<meta charset="UTF-8" />
 	</head>
 	<body>
 		<form action="registrarse2.php" method="post">
-			<input type="text" name="usuario" size="10" placeholder="Elige tu usuario" /><br/>
-			<input type="password" name="contrasena" size="16" placeholder="Pon tu contraseña" /><br/>
-			<input type="password" name="confirmar_contrasena" size="16" placeholder="Repite" /><br/>
+			<input type="text" name="username" size="10" placeholder="Choose your username" /><br/>
+			<input type="password" name="password" size="16" placeholder="Write your password" /><br/>
+			<input type="password" name="confirm_password" size="16" placeholder="Confirm your password" /><br/>
 		
 				
-			<input type="submit" value="Guardar" />
+			<input type="submit" value="Send" />
 
 			
 		</form>
