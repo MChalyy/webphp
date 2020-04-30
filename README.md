@@ -7,5 +7,5 @@ Update 2 - 22/04/2020: Ya funciona correctamente Login y Registro.
 
 
 
-Update 3 - Ya se puede cambiar de nombre de usuario, esta escrito el de contraseña tambien pero no esta funcionando correctamente.
+Update 3 - 25/04/2020. Ya se puede cambiar de nombre de usuario, esta escrito el de contraseña tambien pero no esta funcionando 				correctamente.
 		     
